@@ -29,8 +29,17 @@ class ob1{
 		 예시)
 		 총 평균 포인트는 : 0원 입니다.
 		 */
+		
+		int ea = this.al.get(0).length; //데이터 갯수
 		int w = 0;
 		int point = 0;
+		while(w < ea) { //데이터 갯수만큼 반복
+			//배열 전체 금액 모두 더함
+			point += (int)this.al.get(1)[w];
+			w++;
+		}
+		//int total = sum / ea;
+		System.out.println("총 평균 포인트는 : " + point/this.al.get(1).length + "원 입니다.");
 		
 	}
 }
