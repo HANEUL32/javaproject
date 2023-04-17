@@ -20,7 +20,6 @@ public class Exception4 {
 		ArrayList<String> al = new ArrayList<>();
 		int w = 0;
 		while(w < data.length) {
-			
 			al.add(data[w].replaceAll("[a-zA-Z]", "")); //문자 a-z,A-Z 공백으로 비움 그러면 숫자만 출력됨
 			w++;
 		}
